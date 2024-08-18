@@ -1,23 +1,14 @@
-import { useState } from 'react'
-
 import './App.css'
+import Router from './router'
+import { Provider } from 'react-redux'
+import store from './store/index'
+import 'antd/dist/reset.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div
-        onClick={() => {
-          setCount(count + 1)
-        }}
-      >
-        {count}
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Provider store={store}>
+      <Router></Router>
+    </Provider>
   )
 }
 
