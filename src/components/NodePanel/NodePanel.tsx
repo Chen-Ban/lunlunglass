@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './NodePanel.module.scss'
-import { CanvasNode } from 'src/store/types/Template.type'
+import { CanvasNode } from 'store/types/Template.type'
 type Props = {
   activeNode: CanvasNode | undefined
 }
